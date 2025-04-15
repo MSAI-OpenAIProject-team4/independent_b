@@ -120,7 +120,7 @@ def ask_gpt(query, context, chat_history, model=CHAT_MODEL, system_prompt=None):
 
 ### ✅ 6. 메인 실행
 def main():
-    df = load_embedded_csv("임베딩_완료2.csv")
+    df = load_embedded_csv("embedding_file.csv")
     chat_history = [
     { "role": "system", "content": system_prompt },
     { "role": "user", "content": "유관순은 누구야?" },
@@ -240,7 +240,7 @@ def main():
 
 
 def generate_response(user_question):
-    df = load_embedded_csv("임베딩_완료2.csv")
+    df = load_embedded_csv("embedding_file.csv")
     chat_history = []
 
     system_prompt = """
